@@ -106,7 +106,7 @@ newLink2.textContent = 'Black';
 newLink2.style.color = 'black';
 
 section.appendChild(newLink);
-section.appendChild(newLink2);
+section.prepend(newLink2);
 
 // Set all nav link colors
 navText = document.querySelectorAll('nav a');
