@@ -63,3 +63,36 @@ let contactP3 = document.querySelector('.contact p:nth-child(4)');
 
 let footerP = document.querySelector('footer p');
 
+nav[0].textContent = siteContent['nav']['nav-item-1'];
+nav[1].textContent = siteContent['nav']['nav-item-2'];
+nav[2].textContent = siteContent['nav']['nav-item-3'];
+nav[3].textContent = siteContent['nav']['nav-item-4'];
+nav[4].textContent = siteContent['nav']['nav-item-5'];
+nav[5].textContent = siteContent['nav']['nav-item-6'];
+
+cta[0].querySelector('h1').innerText = siteContent['cta']['h1'];
+cta[0].querySelector('button').innerText = siteContent['cta']['button'];
+ctaImage.setAttribute('src', siteContent["cta"]["img-src"])
+
+mainContent.innerText = siteContent['main-content']['features-h4'];
+mainContentText.innerText = siteContent['main-content']['features-content'];
+mainContent2.innerText = siteContent['main-content']['about-h4'];
+mainContentText2.innerText = siteContent['main-content']['about-content'];
+mainImage.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+bottomContent.innerText = siteContent['main-content']['services-h4'];
+bottomContentText.innerText = siteContent['main-content']['services-content'];
+bottomContent2.innerText = siteContent['main-content']['product-h4'];
+bottomContentText2.innerText = siteContent['main-content']['product-content'];
+bottomContent3.innerText = siteContent['main-content']['vision-h4'];
+bottomContentText3.innerText = siteContent['main-content']['vision-content'];
+
+contactH4.innerText = siteContent['contact']['contact-h4'];
+contactP1.innerText = siteContent['contact']['address'];
+contactP2.innerText = siteContent['contact']['phone'];
+contactP3.innerText = siteContent['contact']['email'];
+
+footerP.innerText = siteContent['footer']['copyright'];
+
+let divTags = document.getElementsByTagName('div');
+
+console.log(footerP);
