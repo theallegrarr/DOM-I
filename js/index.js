@@ -109,7 +109,13 @@ section.appendChild(newLink);
 section.appendChild(newLink2);
 
 // Set all nav link colors
+navText = document.querySelectorAll('nav a');
 navText.forEach(a => a.style.color = 'black');
+navText.forEach(a => a.style.fontWeight = '900');
+
+let navBar = document.querySelector('nav');
+navBar.style.borderBottom = '1px solid black';
+navBar.style.paddingBottom = '15px';
 
 console.log(navText);
 
