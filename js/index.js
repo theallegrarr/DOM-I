@@ -62,6 +62,7 @@ let contactP2 = document.querySelector('.contact p:nth-child(3)');
 let contactP3 = document.querySelector('.contact p:nth-child(4)');
 
 let footerP = document.querySelector('footer p');
+let navText = document.querySelectorAll('nav a');
 
 nav[0].textContent = siteContent['nav']['nav-item-1'];
 nav[1].textContent = siteContent['nav']['nav-item-2'];
@@ -95,4 +96,21 @@ footerP.innerText = siteContent['footer']['copyright'];
 
 let divTags = document.getElementsByTagName('div');
 
-console.log(footerP);
+////// NEW NAV Links
+let section = document.querySelector('nav');
+let newLink =document.createElement('a');
+newLink.textContent = 'Pitch';
+newLink.style.color = 'black';
+let newLink2 =document.createElement('a');
+newLink2.textContent = 'Black';
+newLink2.style.color = 'black';
+
+section.appendChild(newLink);
+section.appendChild(newLink2);
+
+// Set all nav link colors
+navText.forEach(a => a.style.color = 'black');
+
+console.log(navText);
+
+
